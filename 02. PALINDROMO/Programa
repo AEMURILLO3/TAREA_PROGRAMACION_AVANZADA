@@ -1,1 +1,20 @@
+def es_palindromo(frase):
+    # Eliminar espacios y convertir a minúsculas
+    frase = frase.replace(" ", "").lower()
+    # Verificar si la frase es igual a su reverso
+    return frase == frase[::-1]
+
+def main():
+    # Solicitar al usuario que ingrese una palabra o frase
+    frase = input("Ingrese una palabra o frase: ")
+    
+    # Verificar si la palabra o frase es un palíndromo
+    if es_palindromo(frase):
+        print(f'"{frase}" es un palíndromo.')
+    else:
+        print(f'"{frase}" no es un palíndromo.')
+
+# Ejecutar el programa principal
+if __name__ == "__main__":
+    main()
 
